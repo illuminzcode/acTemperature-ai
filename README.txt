@@ -67,7 +67,7 @@ Response:
 🛠️ Setup Instructions
 
 # 1. Clone the repo
-git clone https://github.com/yourname/acTemperature-ai.git
+git clone https://github.com/illuminzcode/acTemperature-ai.git
 cd acTemperature-ai
 
 # 2. Create virtual environment
