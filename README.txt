@@ -48,3 +48,34 @@ acTemperature/
 ├── model.joblib # Trained ML model 
 ├── requirements.txt # Python dependencies 
 └── README.md # This file
+
+
+/analyze — Predict recommended temperature
+POST /analyze
+{
+  "num_people": 15,
+  "num_ac": 3,
+  "total_ac_power": 4500
+}
+
+Response:
+{
+  "recommended_temp_setting": 21.5,
+  "ac_suggestion": "AC setup is sufficient."
+}
+
+🛠️ Setup Instructions
+
+# 1. Clone the repo
+git clone https://github.com/yourname/acTemperature-ai.git
+cd acTemperature-ai
+
+# 2. Create virtual environment
+python -m venv venv
+source venv/bin/activate  # Windows: venv\Scripts\activate
+
+# 3. Install dependencies
+pip install -r requirements.txt
+
+# 4. Run the server
+uvicorn ac_temp_ai:app --reload
